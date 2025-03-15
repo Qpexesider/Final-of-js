@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    margin: 5px;
+
+    background-color: white;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
+}
+li{
+  margin: 10px;
+}
+.menu__item{
+  display: inline-block;
+
+}
+.first-list__full{
+background-color: #F8F8F8;
+  display: flex;
+  justify-content: space-between;
+}
+.bio__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bio__header{
+  padding: 10px;
+}
+.bio__mainS{
+  padding: 10%;
+}
+.second-list__full{
+  display: flex;
+  justify-content: space-between;
+}
+.int__text{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
+.third-list__full{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.mat__text{
+  background-color: #F8F8F8;
+  height: 100%;
+  width: 25%;
+  margin-left: 40px;
+  margin-top: 10%;
+}
+.mat__footer a{
+  color: #F8F8F8;
+   
+}
+.mat__footer {
+  background-color: #696969;
+  color: #F8F8F8;
+  margin: 10px;
+  height: 40%;
+  font-size: 100%;
+  
+}
+.fourth-list__full{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.apl__image{
+  object-fit: contain;
+  width: 30%;
+  
+}
+.fith-list__full{
+  background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    align-items: center; 
+    margin: 10px;
+  }
+.apl__text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+.apl__main{
+  background-color: #696969;
+  color: #F8F8F8;
+  font-size: 90%;
+  margin: 10px;
+  width: 15%;
+  height:20% ;
+}
+.footer-main{
+  display: flex;
+  justify-content: space-between;
+  margin-top:10px ;
+}
+.contakt__text{
+  margin-right: 94%;
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+  body{
+    width: 991px;
+  }
+  .mat__text{
+    font-size: 60%;
+    margin-right: 2%;
+  }
+  .geo__main{
+    width: 70%;
+  }
+  .fourth-list__full{
+    font-size:90% ;
+  }
+}
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+  body{
+    width: 660px;
+    font-size: 50%;
+  }
+  .header__logo{
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+  }
+  .main-nav__list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    right: calc(100% + 10000px);
+  }
+  .menu__item{
+    font-size: 10px;
+  }
+  .burger__menu{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('burger menu otkrit.png');
+    background-size: 30px;
+    left: calc(100% - 40px);
+    top: 0px;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+.burger__menu.active{
+  background-image: url('burger menu zakrit.png');
+}
+.main-nav__list.active{
+  right: calc(100% - 660px);
+}
+.bio__image{
+  width: 50%;
+  height: 50%;
+}
+.burger__menu{
+  top: 0px;
+  left: calc(100% - 30px);
+}
+.int__image{
+  width: 50%;
+  height: 50%;
+}
+.mat__image{
+  width: 50%;
+  height: 50%;
+  margin-right: 10px;
+}
+.geo__main{
+  width: 100%;
+  height: 50%;
+}
+.fith-list__full{
+  flex-direction:column ;
+}
+.apl__logo{
+  margin-left: 10%;
+}
+.apl__image{
+  width: 50%;
+  height: 50%;
+  margin-top: 5px;
+}
+.apl__main{
+  font-size: 40%;
+}
+.apl__header{
+  margin-top: 2px;
+}
+.contakt__text{
+  margin-left: 2%;
+  font-size: 150%;
+}
+
+}
+/* телефоны вертикально */
+@media (max-width: 480px) {
+  body{
+    width: 375px;
+    font-size: 40%;
+  }
+  .main-nav__list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    right: calc(100% + 10000px);
+  }
+  .menu__item{
+    font-size: 10px;
+  }
+  .burger__menu{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('burger menu otkrit.png');
+    background-size: 30px;
+    left: calc(100% - 40px);
+    top: 100px;
+    z-index: 1;
+    transition: 0.3s ease;
+  }
+  .burger__menu.active{
+    background-image: url('burger menu zakrit.png');
+  }
+  .main-nav__list.active{
+    right: calc(100% - 375px);
+  }
+  .bio__image{
+    width: 50%;
+    height: 50%;
+  }
+  .burger__menu{
+    top: 0px;
+    left: calc(100% - 30px);
+  }
+  .int__image{
+    width: 50%;
+    height: 50%;
+  }
+  .mat__image{
+    width: 50%;
+    height: 50%;
+    margin-right: 10px;
+  }
+  .geo__main{
+    width: 100%;
+    height: 50%;
+  }
+  .fith-list__full{
+    flex-direction:column ;
+  }
+  .apl__logo{
+    margin-left: 10%;
+  }
+  .apl__image{
+    width: 50%;
+    height: 50%;
+    margin-top: 5px;
+  }
+  .apl__main{
+    font-size: 40%;
+  }
+  .apl__header{
+    margin-top: 2px;
+  }
+  .contakt__text{
+    margin-left: 2%;
+    font-size: 150%;
+  }
+  .header__logo{
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+  }
+}
